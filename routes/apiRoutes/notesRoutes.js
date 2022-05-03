@@ -1,6 +1,6 @@
 const router = require('express').Router();
 // Import notes functions
-const { createNewNote } = require('../../lib/notes');
+const { createNewNote, deleteNote } = require('../../lib/notes');
 // Get JSON data
 const notes = require('../../db/db.json');
 
@@ -17,6 +17,14 @@ router.post('/notes', (req, res) => {
     req.body.id = notes.length.toString();
     const note = createNewNote(req.body, notes);
     res.json(note);
+})
+
+router.delete('/notes/:id', (req, res) => {
+    const result = deleteNote(req.params.id, notes);
+
+    console.log(result);
+
+    res.json(notes);
 })
 
 
