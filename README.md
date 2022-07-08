@@ -21,6 +21,9 @@
   
   [Deployed Application](https://warm-atoll-27132.herokuapp.com/notes)
   
+  ## Screenshot
+  ![noettaker](https://user-images.githubusercontent.com/85321444/178082435-8b02c37a-43b1-4b02-b7c3-4126d15bee88.jpg)
+
   ## How to Contribute
       
   Contributions on this project are currently closed, as it is completed for the forseeable future.
